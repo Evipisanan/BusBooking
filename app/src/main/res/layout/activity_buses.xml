@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".Buses"
+  tools:layout_editor_absoluteY="81dp">
+
+  <android.support.design.widget.BottomNavigationView
+    android:id="@+id/bottomNavigationView"
+    android:layout_width="0dp"
+    android:layout_height="40dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+
+    android:background="@android:color/background_light"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tableLayout">
+
+    <Button
+      android:id="@+id/button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="right"
+      android:layout_marginRight="5dp"
+      android:background="@android:color/holo_red_dark"
+      android:fontFamily="@string/navigation_drawer_open"
+      android:text="Done"
+      android:textSize="20dp" />
+
+    <TextView
+      android:id="@+id/textView2"
+      android:layout_width="86dp"
+      android:layout_height="match_parent"
+      android:fontFamily="@string/navigation_drawer_close"
+
+      android:text="Seat No "
+      android:textSize="18dp" />
+
+    <TextView
+      android:id="@+id/textView3"
+      android:layout_width="107dp"
+      android:layout_height="31dp"
+      android:layout_gravity="right"
+      android:layout_marginRight="100dp"
+      android:text="Amount" />
+  </android.support.design.widget.BottomNavigationView>
+
+  <TableLayout
+    android:id="@+id/tableLayout"
+    android:layout_width="221dp"
+    android:layout_height="405dp"
+    android:layout_below="@+id/test_button_text23"
+    android:layout_marginBottom="8dp"
+    android:layout_marginEnd="80dp"
+    android:layout_marginTop="37dp"
+    android:background="@drawable/body"
+    android:stretchColumns="*"
+    app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+    app:layout_constraintEnd_toEndOf="@+id/bottomNavigationView"
+    app:layout_constraintTop_toTopOf="parent">>
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="29dp"
+      android:layout_marginTop="48dp">
+
+
+      <ImageButton
+        android:id="@+id/btnS11"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+
+        android:layout_weight="1"
+
+        android:contentDescription="TODO"
+        android:onClick="onImageClickOneOne"
+
+        android:src="@drawable/firstseat" />
+
+      <ImageButton
+        android:id="@+id/btnS12"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="19dp"
+        android:layout_weight="1"
+        android:visibility="invisible"
+        android:src="@drawable/firstseat" />
+
+      <ImageButton
+        android:id="@+id/btnS13"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:onClick="onImageClickOneTwo"
+        android:src="@drawable/firstseat" />
+
+      <ImageButton
+        android:id="@+id/btnS14"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="1"
+        android:onClick="onImageClickOneThree"
+        android:src="@drawable/firstseat" />
+    </TableRow>
+
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="29dp"
+      android:layout_marginTop="8dp">
+
+
+      <ImageButton
+        android:id="@+id/btnS21"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onImageClickTwoOne"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="1"
+        android:contentDescription="TODO"
+
+        android:src="@drawable/firstseat" />
+
+      <ImageButton
+        android:id="@+id/btnS22"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="19dp"
+        android:onClick="onImageClickTwoTwo"
+        android:layout_weight="1"
+        android:src="@drawable/firstseat" />
+
+      <ImageButton
+        android:id="@+id/btnS23"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:onClick="onImageClickTwoThree"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:src="@drawable/firstseat" />
+
+      <ImageButton
+        android:id="@+id/btnS24"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:onClick="onImageClickTwoFour"
+        android:layout_marginRight="15dp"
+        android:layout_weight="1"
+
+        android:src="@drawable/firstseat" />
+
+    </TableRow>
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="29dp"
+      android:layout_marginTop="8dp">
+
+
+      <ImageButton
+        android:id="@+id/btnS31"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onImageClickThreeOne"
+        android:layout_marginLeft="15dp"
+
+        android:layout_weight="1"
+        android:contentDescription="TODO"
+
+        android:src="@drawable/firstseat" />
+
+      <ImageButton
+        android:id="@+id/btnS32"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="19dp"
+        android:layout_weight="1"
+        android:onClick="onImageClickThreeTwo"
+        android:src="@drawable/firstseat" />
+
+      <ImageButton
+        android:id="@+id/btnS33"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:onClick="onImageClickThreeThree"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+
+        android:src="@drawable/firstseat" />
+
+      <ImageButton
+        android:id="@+id/btnS34"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:onClick="onImageClickThreeFour"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="1"
+
+        android:src="@drawable/firstseat" />
+    </TableRow>
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="29dp"
+      android:layout_marginTop="8dp">
+
+
+      <ImageButton
+        android:id="@+id/btnS41"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onImageClickFourOne"
+        android:layout_marginLeft="15dp"
+
+        android:layout_weight="1"
+        android:contentDescription="TODO"
+
+        android:src="@drawable/firstseat" />
+
+      <ImageButton
+        android:id="@+id/btnS42"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="19dp"
+        android:layout_weight="1"
+        android:onClick="onImageClickFourTwo"
+        android:src="@drawable/firstseat" />
+
+      <ImageButton
+        android:id="@+id/btnS43"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:onClick="onImageClickFourThree"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+
+        android:src="@drawable/firstseat" />
+
+      <ImageButton
+        android:id="@+id/btnS44"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:onClick="onImageClickFourFour"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="1"
+
+        android:src="@drawable/firstseat" />
+    </TableRow>
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="29dp"
+      android:layout_marginTop="8dp">
+
+
+      <ImageButton
+        android:id="@+id/btnS51"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onImageClickFiveOne"
+        android:layout_marginLeft="15dp"
+
+        android:layout_weight="1"
+        android:contentDescription="TODO"
+
+        android:src="@drawable/firstseat" />
+
+      <ImageButton
+        android:id="@+id/btnS52"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="19dp"
+        android:onClick="onImageClickFiveTwo"
+        android:layout_weight="1"
+        android:src="@drawable/firstseat" />
+
+      <ImageButton
+        android:id="@+id/btnS53"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:onClick="onImageClickFiveThree"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+
+        android:src="@drawable/firstseat" />
+
+      <ImageButton
+        android:id="@+id/btnS54"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="1"
+        android:onClick="onImageClickFiveFour"
+        android:src="@drawable/firstseat" />
+    </TableRow>
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="29dp"
+      android:layout_marginTop="8dp">
+
+
+      <ImageButton
+        android:id="@+id/btnS61"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onImageClickSixOne"
+        android:layout_marginLeft="15dp"
+
+        android:layout_weight="1"
+        android:contentDescription="TODO"
+
+        android:src="@drawable/firstseat" />
+
+      <ImageButton
+        android:id="@+id/btnS62"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="19dp"
+        android:onClick="onImageClickSixTwo"
+        android:layout_weight="1"
+        android:src="@drawable/firstseat" />
+
+      <ImageButton
+        android:id="@+id/btnS63"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:onClick="onImageClickSixThree"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+
+        android:src="@drawable/firstseat" />
+
+      <ImageButton
+        android:id="@+id/btnS64"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="15dp"
+        android:onClick="onImageClickSixFour"
+        android:layout_weight="1"
+
+        android:src="@drawable/firstseat" />
+    </TableRow>
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="29dp"
+      android:layout_marginTop="8dp">
+
+
+      <ImageButton
+        android:id="@+id/btnS71"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onImageClickSevenOne"
+        android:layout_marginLeft="15dp"
+
+        android:layout_weight="1"
+        android:contentDescription="TODO"
+
+        android:src="@drawable/firstseat" />
+
+      <ImageButton
+        android:id="@+id/btnS72"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="19dp"
+        android:layout_weight="1"
+        android:onClick="onImageClickSevenTwo"
+        android:src="@drawable/firstseat" />
+
+      <ImageButton
+        android:id="@+id/btnS73"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:onClick="onImageClickSevenThree"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+
+        android:src="@drawable/firstseat" />
+
+      <ImageButton
+        android:id="@+id/btnS74"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="1"
+        android:onClick="onImageClickSevenFour"
+        android:src="@drawable/firstseat" />
+    </TableRow>
+
+
+  </TableLayout>
+
+
+</android.support.constraint.ConstraintLayout>
